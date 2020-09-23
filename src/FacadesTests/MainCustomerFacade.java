@@ -13,26 +13,26 @@ public class MainCustomerFacade {
     public static void main(String[] args) {
 
         Customer customer = new Customer();
-        customer.setFirstName("Customer Facade Test");
-        customer.setLastName("Customer Facade Test");
-        customer.setEmail("Customer_Facade_Test@gmail.com");
-        customer.setPassword("CustomerFacade_Test_Password");
-        customer.setId(188);
+        customer.setFirstName("Implement!");
+        customer.setLastName("Implement!");
+        customer.setEmail("Implement!");
+        customer.setPassword("Implement!");
+        customer.setId("Implement!");
 
         try {
-            CustomerFacade customerFacade = (CustomerFacade) AbsFacade.login("Rany@gmail.com", "987234983", LoginType.CUSTOMER);
+            CustomerFacade customerFacade = (CustomerFacade) AbsFacade.login("Implement!", "Implement!", LoginType.CUSTOMER);
             /**/
             System.out.println("Method - Purchase coupon:");
-            customerFacade.purchaseCoupon(73);
+            customerFacade.purchaseCoupon("Implement!");
 
             System.out.println("Method - Get my purchased coupon:");
             System.out.println(customerFacade.getMyPurchasedCoupons());
 
             System.out.println("Method - Get coupons by category:");
-            System.out.println(customerFacade.getCouponsByCategory(1));
+            System.out.println(customerFacade.getCouponsByCategory("Implement!"));
 
             System.out.println("Method - Get coupons lower than price:");
-            System.out.println(customerFacade.getCouponsLowerThanPrice(1000));
+            System.out.println(customerFacade.getCouponsLowerThanPrice("Implement!"));
 
 
         } catch (InvalidLoginException | SystemMalFunctionException | SQLException | NoSuchCouponException | NoSuchCustomerException | CouponAlreadyPurchasedException | ZeroCouponAmountException | ReturnCouponsException e) {

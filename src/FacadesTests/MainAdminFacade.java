@@ -14,18 +14,18 @@ public class MainAdminFacade {
     public static void main(String[] args) {
 
         Company company = new Company();
-        company.setId(66);
-        company.setName("Admin Facade ---V");
+        company.setId("Implement!");
+        company.setName("Implement!");
         company.setCoupons(null);
-        company.setEmail("Admin_Facade_---V222@gmail.com");
-        company.setPassword("Admin_Password ---V222");
+        company.setEmail("Implement!");
+        company.setPassword("Implement!");
 
         Customer customer = new Customer();
-        customer.setFirstName("First Name---V ");
-        customer.setLastName("Last Name---V");
-        customer.setEmail("Admin_Facade2233@gmail.com---V2");
-        customer.setPassword("Admin_Facade_Password2233---V2");
-        customer.setId(198);
+        customer.setFirstName("Implement! ");
+        customer.setLastName("Implement!");
+        customer.setEmail("Implement!");
+        customer.setPassword("Implement!");
+        customer.setId("Implement!");
 
 
         try {
@@ -52,7 +52,7 @@ public class MainAdminFacade {
 
             /*Add the ID company from the DB*/
             System.out.println("Method - Get company:");
-            System.out.println(adminFacade.getCompany(66));
+            System.out.println(adminFacade.getCompany("Implement!"));
 
 
             /*Customer methods*/
@@ -70,7 +70,7 @@ public class MainAdminFacade {
             /*Remove customer: */
             /*Add the ID customer from the DB to the requested company*/
             System.out.println("Method - Remove customer:");
-            adminFacade.removeCustomer(196);
+            adminFacade.removeCustomer("Implement!");
 
             /*Get all customers: */
             System.out.println("Method - Get all customers:");
@@ -80,7 +80,7 @@ public class MainAdminFacade {
 
             /*Add the ID customer from the DB*/
             System.out.println("Method - Get customer:");
-            System.out.println(adminFacade.getCustomer(198));
+            System.out.println(adminFacade.getCustomer("Implement!"));
 
         } catch (SystemMalFunctionException | InvalidLoginException | SQLException | NoSuchCustomerException | NoSuchCompanyException | ReturnCouponsException | UpdateCompanyException | CustomerAlreadyExists | CustomerUpdateException e) {
             e.printStackTrace();
